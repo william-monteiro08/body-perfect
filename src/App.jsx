@@ -24,7 +24,7 @@ import gym5 from './assets/gym-5.jpg'
 import sala from './assets/sala.jpg'
 
 function App() {
-  const whatsapp = 'https://wa.me/34649698704'
+  const whatsapp = 'https://wa.me/34922021492?text=Hola,%20quiero%20información%20sobre%20Body%20Perfect'
 
   const trainers = [
     {
@@ -235,28 +235,41 @@ function App() {
         <div>
           <p className="eyebrow">Contacto</p>
           <h2>Empieza hoy en Body Perfect.</h2>
-          <p>
-            Escríbenos por WhatsApp o visítanos en La Laguna, Tenerife.
-          </p>
+          <p>Escríbenos por WhatsApp o visítanos en La Laguna, Tenerife.</p>
         </div>
 
         <div className="contact-card">
           <p>
-            <MapPin /> La Laguna, Tenerife
+            <MapPin /> Av. Lucas Vega, 1. San Cristóbal de La Laguna, Santa Cruz de Tenerife 38208
           </p>
+
           <p>
-            <Phone /> 649 698 704
+            <Phone /> 922 02 14 92
           </p>
+
           <p>
-            <Clock /> Consulta horarios en recepción
+            <Clock /> Lunes–Viernes 7:00–22:00 | Sábado-Domingo 9:00–14:00
           </p>
+
           <p>
             <AtSign /> @bodyperfecttenerife
           </p>
 
-          <a href={whatsapp} className="btn primary" target="_blank">
+          <a href="tel:922021492" className="btn primary">
             Contactar ahora
           </a>
+        </div>
+
+        <div className="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.618758096383!2d-16.32228762340766!3d28.491025875742263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc41cdc0f84ce9e3%3A0x8ddca5b69582134c!2sGimnasio%20Body%20Perfect!5e0!3m2!1spt-PT!2ses!4v1778691050544!5m2!1spt-PT!2ses"
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </section>
 

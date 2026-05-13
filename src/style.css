@@ -372,6 +372,23 @@ h2 {
   color: rgba(255, 255, 255, 0.82);
 }
 
+.map-container {
+    grid-column: 1 / -1;
+    width: 100%;
+    height: 430px;
+    border-radius: 24px;
+    overflow: hidden;
+    margin-top: 10px;
+    border: 1px solid rgba(255,255,255,0.08);
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.45);
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
 .contact-card svg {
   color: var(--blue-light);
 }
@@ -460,5 +477,9 @@ footer img {
   footer {
     flex-direction: column;
     text-align: center;
+  }
+
+  .map-container {
+    height: 320px;
   }
 }
